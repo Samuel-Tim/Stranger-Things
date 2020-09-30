@@ -14,7 +14,7 @@
 	margin-left: auto;
 	margin-right: auto;
 	height:auto;
-	width:100vw;
+	width:100%;
 	}
 
 
@@ -90,15 +90,25 @@
 		font-size: 16px;
 		}
 
-  .carte{
+  body{
     display:flex;
     flex-direction: column;
   }
 
   @media(min-width:600px){
-    .carte{
-      display:flex;
+    body{
+      flex-direction: row;
       flex-wrap: wrap;
+    }
+    .carte{
+      width:50%;
+    }
+  }
+
+  @media(min-width:900px){
+   
+    .carte{
+      width:25%;
     }
   }
   
